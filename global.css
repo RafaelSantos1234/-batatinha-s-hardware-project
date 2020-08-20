@@ -5,7 +5,7 @@
     border-style: none;  
     text-decoration: none;
     list-style-type: none;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font: 400 15px Roboto, sans-serif;
 }
 
@@ -33,7 +33,6 @@ header{
 
 }
 .tela_pc{
-    box-sizing: border-box;
     width: 350px;
     height: 260px;
     overflow: hidden;
@@ -124,7 +123,6 @@ header{
 }
 
 .slideshow-images{
-    box-sizing: border-box;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -199,13 +197,13 @@ nav, nav a{
 }
 
 
-nav li{
+li{
     height: 100%;
     float: left;
     margin: 15px;
 }
 
-nav li a{
+li a{
     text-decoration: none;
     padding: 15px;
     font-family: sans-serif;
@@ -213,7 +211,7 @@ nav li a{
     font-size: 12pt;
 }
 
-nav li a:hover{ background: rgba(225,225,225,0.3); }
+a:hover{ background: rgba(225,225,225,0.3); }
 
 .fixo{
     top:0px;
@@ -233,7 +231,7 @@ nav li a:hover{ background: rgba(225,225,225,0.3); }
 
 
 
-#conteudo{box-sizing: border-box;
+#conteudo{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -299,8 +297,10 @@ nav li a:hover{ background: rgba(225,225,225,0.3); }
 
 @media(max-width:600px){
     .tela_pc{
-    height: 200px; 
+    height: 200px;
+ 
 }
+
 .tela_pc:nth-child(1){
 
     width: 160px;
@@ -373,139 +373,12 @@ a:active, a { color: black; }
     border-radius: 5px;
 }
 
-/* Footer */
 footer{
     background:#223330;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 50px;
     margin-top:100px;
     color: white;
     font-size: 12px;
     line-height: 50px;
-    padding:  2em 5em;
 }
-
-footer ul{ height: 100%; }
-
-footer ul , #Logo, .siga, 
-.collaborators, .collaborators a{ display: flex; }
-
-footer ul , #Logo{ justify-content: space-between; }
-
-#Logo, .siga, .collaborators,
-.collaborators a{ align-items: center; }
-
-#Logo img{
-    margin: 0 10px;
-    width: 100px;
-    height: 100px;
-}
-
-footer ul li .footer-link-content a{
-    display: block;
-    width: auto;
-}
-
-footer ul li:nth-child(3) .footer-link-content a{ width: auto; }
-
-footer ul li:nth-child(3) h3{ margin-bottom: 10px; }
-
-footer ul li:nth-child(2) .footer-link-content p{ margin-top: 10px; }
-
-footer ul li:last-child{ margin: 0 8rem 0 0; }
-
-footer ul li .footer-link-content a:hover{ color: #fe42e0; }
-
-#checkGit{ display: none; }
-
-label[for="checkGit"], #checkGit { 
-    right: 215px;
-    cursor: pointer;
- }
-
-label[for="checkGit"] img:hover{ opacity: 1; }
-
-label[for="checkGit"] img{
-    opacity: 0.5;
-    width: 50px;
-    height: 50px;
-    transition: all 0.5s;
-    border-radius: 70%;
-}
-
-#container-git-collaborators{
-    width: 100%;
-    max-width: 180px;
-    display: block;
-    padding: 0 0 0 5px;
-    transition: all 0.5s;
-}
- 
-#git-collaborators-list{ margin: 0 15px 0 20px; }
-
-.collaborators{
-    height: 50px;
-    margin: 2px 0;
-}
-
-.collaborators a{
-    position: absolute;
-    transform: scale(0);
-    margin: 5px;
-    padding: 5px;
-    width: 25px;
-    border-radius: 40px;
-    background-color: #171516;
-    transition: all 0.5s;
-    transition-timing-function: ease;
-    box-shadow: 1px 2px 5px 1px black;
-}
-
-.collaborators a:hover{
-    cursor: pointer;
-    width: 170px;
-    background-color: #1f1c1d;
-}
-
-.collaborators img{
-    transition: all 1s;
-    max-width: 35px;
-    max-height: 35px;
-    border-radius: 15px;
-}
-
-.collaborators p{ 
-    margin: 0 0 0 10px;
-    color: white;
-    display: none;
- }
-
-@media(max-width: 600px){
-
-    footer ul , #Logo{ 
-        flex-direction: column;
-        align-items: center;
-     }
-
-    footer ul li{ margin: 0 0 3rem 0;}
-    
-    footer ul li:nth-child(3){ margin: 0 20px 3rem 0; }
-    
-    footer ul li:last-child{ margin: 0 2rem 0 0; }
-
- }
-
-@media(max-width: 990px){
-
-    footer ul , #Logo{ 
-        flex-direction: column;
-        align-items: center;
-     }
-
-    footer ul li{ margin: 0 0 3rem 0;}
-    
-    footer ul li:nth-child(3){ margin: 0 20px 3rem 0; }
-    
-    footer ul li:last-child{ margin: 0 2rem 0 0; }
-
- }
