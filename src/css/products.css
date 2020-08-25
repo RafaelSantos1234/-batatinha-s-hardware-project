@@ -66,7 +66,13 @@ caption{
     border:1px solid #ccc;
     border-radius: 5px;
     height: 365px;
-    
+}
+
+.product-content p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .product-content img {
@@ -127,25 +133,29 @@ caption{
 }
 
 /*Estilizando a scrollbar do modal */
-.modal::-webkit-scrollbar, 
-.modal::-o-scrollbar,
-.modal::-ms-scrollbar{
+.modal::-webkit-scrollbar{
     width: 5px;
 }
 
-.modal::-webkit-scrollbar-thumb,
-.modal::-o-scrollbar-thumb,
-.modal::-ms-scrollbar-thumb{
+
+
+
+.modal::-webkit-scrollbar-thumb{
     width: 5px;
     background: rgba(0,0,0,0.5);
     border-radius: 20px;
 }
 
-.modal::-webkit-scrollbar-thumb:hover,
-.modal::-o-scrollbar-thumb:hover,
-.modal::-ms-scrollbar-thumb:hover{
+
+
+
+.modal::-webkit-scrollbar-thumb:hover
+{
     background:rgba(0,0,0,0.8);
 }
+
+
+
 
 /* --------------------------------------- */
 .modal table{display: block;}
