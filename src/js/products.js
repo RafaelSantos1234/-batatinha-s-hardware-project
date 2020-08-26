@@ -57,6 +57,9 @@ window.addEventListener("load",eventos);//Carrega os eventos
 
 //Essa função tornará o menu fixo após escrollar 176px para baixo
   $(function(){
+      //carrega o menu na página
+      $("#menu").load("../../html/menu.html");
+   //--------------------------------------------------
            $(window).scroll(function(){
          if($(this).scrollTop() > 250 && $(window).width()>600){
             $("#menu").addClass("fixo");
